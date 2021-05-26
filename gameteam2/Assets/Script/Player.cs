@@ -5,7 +5,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     [SerializeField]
-    private float moveSpeed = 3f;
+    private float moveSpeed = 5f;
     [SerializeField]
     private float random = 0;
     [SerializeField]
@@ -40,7 +40,7 @@ public class Player : MonoBehaviour
         if (h < 0)
         {
             //GetComponent<Animator>().SetBool("Walk", true);
-            transform.localScale = new Vector3(-1, 1, 1);
+            transform.localScale = new Vector3(-7, 7, 7);
         }
         else if (h == 0)
         {
@@ -49,7 +49,7 @@ public class Player : MonoBehaviour
         else
         {
             //GetComponent<Animator>().SetBool("Walk", true);
-            transform.localScale = new Vector3(1, 1, 1);
+            transform.localScale = new Vector3(7, 7, 7);
         }
     }
 
