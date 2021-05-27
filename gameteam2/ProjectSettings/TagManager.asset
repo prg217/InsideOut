@@ -7,6 +7,8 @@ TagManager:
   - Monster
   - Floor
   - Wall
+  - Ladder
+  - Shelter
   layers:
   - Default
   - TransparentFX
