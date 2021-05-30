@@ -85,11 +85,6 @@ public class Player : MonoBehaviour
             //사다리가 true면 위아래로 움직이게 한다
             //Debug.Log("사다리 만남");
         }
-        if (collision.CompareTag("Monster"))
-        {
-            //Debug.Log("접촉");
-            //HP.hp -= 2f;
-        }
     }
     private void OnTriggerExit2D(Collider2D collision)//사다리 빠져나오면?
     {
