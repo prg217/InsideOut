@@ -24,11 +24,6 @@ public class Monster : MonoBehaviour
         float speed = moveSpeed * Time.deltaTime * direction;
         Vector3 vector = new Vector3(speed, 0, 0);
         transform.Translate(vector);
-
-        if (GameManager.instance.IsMonster == false)
-        {
-            Destroy(gameObject);
-        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -36,6 +31,15 @@ public class Monster : MonoBehaviour
         if (collision.collider.tag == "Wall") //벽에 부딪히면 없어짐
         {
             GameManager.instance.IsMonster = false;
+            Destroy(gameObject, 2f);
+        }
+
+        if (collision.collider.tag == "Player") //플레이어랑 부딪히면 안부딪히던거 레이어 문제였음 숨기는 애니메이션과 레이어만 바꿔줌 되는듯
+        {
+            GameManager.instance.IsMonster = false;
+            //GameManager.instance.HP -= 2;
+            HP.hp -= 2f;
+            Destroy(gameObject);
         }
 
     }

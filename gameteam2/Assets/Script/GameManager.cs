@@ -22,5 +22,6 @@ public class GameManager : MonoBehaviour
         }
     }
     public bool IsMonster = false;
+    //public int HP = 20;
 }
 

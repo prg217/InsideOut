@@ -14,7 +14,8 @@ public class Player : MonoBehaviour
     private GameObject monsterObj = null;
     [SerializeField]
     private GameObject monsterPos = null;
-    //HP 변수 만들어야겠어~
+
+    //public int HP = 20;
 
     void Start()
     {
@@ -75,17 +76,20 @@ public class Player : MonoBehaviour
     //사다리(?)이동
     public bool isLadder;
 
-    private void OnTriggerEnter2D(Collider2D collision)//사다리 인식하기
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.CompareTag("Ladder"))//ladder라는 태그를 만나면?
+        if(collision.CompareTag("Ladder"))//사다리 인식하기 ladder라는 태그를 만나면?
         {
             isLadder = true;
             
             //사다리가 true면 위아래로 움직이게 한다
             //Debug.Log("사다리 만남");
         }
-
-        
+        if (collision.CompareTag("Monster"))
+        {
+            //Debug.Log("접촉");
+            //HP.hp -= 2f;
+        }
     }
     private void OnTriggerExit2D(Collider2D collision)//사다리 빠져나오면?
     {
