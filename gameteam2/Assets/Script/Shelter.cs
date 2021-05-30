@@ -24,10 +24,12 @@ public class Shelter : MonoBehaviour
             if (Input.GetKey(KeyCode.LeftControl)) //좌 컨트롤 누르고 있을 동안만
             {
                 GameObject.Find("Player").layer = 6; //Hide
+                Player.move = false;
             }
             else //떼었을 때
             {
                 GameObject.Find("Player").layer = 0; //디폴트(다시 몬스터 맞음)
+                Player.move = true;
             }
         }
     }

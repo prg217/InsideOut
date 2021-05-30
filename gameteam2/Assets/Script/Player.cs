@@ -15,6 +15,8 @@ public class Player : MonoBehaviour
     [SerializeField]
     private GameObject monsterPos = null;
 
+    public static bool move = true;
+
     //public int HP = 20;
 
     void Start()
@@ -26,7 +28,10 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        PlayerMove();
+        if (move == true)
+        {
+            PlayerMove();
+        }
 
         //만약 단서가 0개면 여긴 단서가 없어...라고 말함
         //숨을때 레이어 바꾸기 프로젝트세팅 -피직스 -레이어 콜리즌 메트릭스들어가면 이 레이어끼리 콜라이더를 할거냐 안할거냐(이것도 강의에 있던 것 같아) 박스 콜라이더 닳으면 HP닳아
