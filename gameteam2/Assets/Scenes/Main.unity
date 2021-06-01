@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 63229394}
   - component: {fileID: 63229396}
   - component: {fileID: 63229395}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: ItemImg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -209,7 +209,7 @@ GameObject:
   - component: {fileID: 82077258}
   - component: {fileID: 82077260}
   - component: {fileID: 82077259}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -287,6 +287,10 @@ PrefabInstance:
     - target: {fileID: 6162314212979618617, guid: 78087e5119c69f543b4249a3425e32c6, type: 3}
       propertyPath: m_Name
       value: Slot (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6162314212979618617, guid: 78087e5119c69f543b4249a3425e32c6, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6162314212979618618, guid: 78087e5119c69f543b4249a3425e32c6, type: 3}
       propertyPath: m_Pivot.x
@@ -389,7 +393,7 @@ GameObject:
   m_Component:
   - component: {fileID: 93350481}
   - component: {fileID: 93350482}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Grid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -467,7 +471,7 @@ GameObject:
   - component: {fileID: 95646429}
   - component: {fileID: 95646428}
   - component: {fileID: 95646427}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: End_Btn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -655,7 +659,7 @@ GameObject:
   - component: {fileID: 122960940}
   - component: {fileID: 122960939}
   - component: {fileID: 122960941}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: HP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -741,6 +745,10 @@ PrefabInstance:
     - target: {fileID: 6162314212979618617, guid: 78087e5119c69f543b4249a3425e32c6, type: 3}
       propertyPath: m_Name
       value: Slot (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6162314212979618617, guid: 78087e5119c69f543b4249a3425e32c6, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6162314212979618618, guid: 78087e5119c69f543b4249a3425e32c6, type: 3}
       propertyPath: m_Pivot.x
@@ -844,7 +852,7 @@ GameObject:
   - component: {fileID: 160871613}
   - component: {fileID: 160871615}
   - component: {fileID: 160871614}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: ItemImg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -919,7 +927,7 @@ GameObject:
   - component: {fileID: 165586616}
   - component: {fileID: 165586618}
   - component: {fileID: 165586617}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -995,7 +1003,7 @@ GameObject:
   - component: {fileID: 224460173}
   - component: {fileID: 224460175}
   - component: {fileID: 224460174}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: ItemImg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1070,7 +1078,7 @@ GameObject:
   - component: {fileID: 246054697}
   - component: {fileID: 246054699}
   - component: {fileID: 246054698}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: ItemImg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1144,6 +1152,10 @@ PrefabInstance:
     - target: {fileID: 6162314212979618617, guid: 78087e5119c69f543b4249a3425e32c6, type: 3}
       propertyPath: m_Name
       value: Slot (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6162314212979618617, guid: 78087e5119c69f543b4249a3425e32c6, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6162314212979618618, guid: 78087e5119c69f543b4249a3425e32c6, type: 3}
       propertyPath: m_Pivot.x
@@ -1247,7 +1259,7 @@ GameObject:
   - component: {fileID: 299293259}
   - component: {fileID: 299293261}
   - component: {fileID: 299293260}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: ItemImg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1408,7 +1420,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: 7482667652216324306, guid: db750325989564987a34393247d883b4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1432,9 +1444,10 @@ GameObject:
   - component: {fileID: 406339875}
   - component: {fileID: 406339874}
   - component: {fileID: 406339873}
-  m_Layer: 5
+  - component: {fileID: 406339877}
+  m_Layer: 0
   m_Name: Canvas
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1524,6 +1537,32 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!61 &406339877
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 406339872}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1001 &414614587
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1534,6 +1573,10 @@ PrefabInstance:
     - target: {fileID: 6162314212979618617, guid: 78087e5119c69f543b4249a3425e32c6, type: 3}
       propertyPath: m_Name
       value: Slot (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6162314212979618617, guid: 78087e5119c69f543b4249a3425e32c6, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6162314212979618618, guid: 78087e5119c69f543b4249a3425e32c6, type: 3}
       propertyPath: m_Pivot.x
@@ -1704,7 +1747,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 6.6300006, z: -10}
+  m_LocalPosition: {x: -0.02, y: 6.9000006, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 108612982}
@@ -1842,7 +1885,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: 7482667652216324306, guid: db750325989564987a34393247d883b4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2033,7 +2076,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: 7482667652216324306, guid: db750325989564987a34393247d883b4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2095,6 +2138,10 @@ PrefabInstance:
     - target: {fileID: 6162314212979618617, guid: 78087e5119c69f543b4249a3425e32c6, type: 3}
       propertyPath: m_Name
       value: Slot (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6162314212979618617, guid: 78087e5119c69f543b4249a3425e32c6, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6162314212979618618, guid: 78087e5119c69f543b4249a3425e32c6, type: 3}
       propertyPath: m_Pivot.x
@@ -2198,7 +2245,7 @@ GameObject:
   - component: {fileID: 592500655}
   - component: {fileID: 592500657}
   - component: {fileID: 592500656}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: ItemImg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2307,6 +2354,10 @@ PrefabInstance:
     - target: {fileID: 6162314212979618617, guid: 78087e5119c69f543b4249a3425e32c6, type: 3}
       propertyPath: m_Name
       value: Slot (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6162314212979618617, guid: 78087e5119c69f543b4249a3425e32c6, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6162314212979618618, guid: 78087e5119c69f543b4249a3425e32c6, type: 3}
       propertyPath: m_Pivot.x
@@ -2496,7 +2547,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: 7482667652216324306, guid: db750325989564987a34393247d883b4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2519,7 +2570,7 @@ GameObject:
   - component: {fileID: 716627868}
   - component: {fileID: 716627870}
   - component: {fileID: 716627869}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: ItemImg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2594,7 +2645,7 @@ GameObject:
   - component: {fileID: 725209773}
   - component: {fileID: 725209775}
   - component: {fileID: 725209774}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: ItemImg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2671,6 +2722,8 @@ GameObject:
   - component: {fileID: 738372422}
   - component: {fileID: 738372421}
   - component: {fileID: 738372425}
+  - component: {fileID: 738372426}
+  - component: {fileID: 738372427}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -2694,7 +2747,7 @@ MonoBehaviour:
   random: 0
   monsterObj: {fileID: 2232030017702227728, guid: 24f58d2687d18da4e997acd438f67f11, type: 3}
   monsterPos: {fileID: 826011587}
-  isLadder: 0
+  animator: {fileID: 0}
 --- !u!61 &738372422
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2708,18 +2761,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0035879537, y: -0.0074637085}
+  m_Offset: {x: -0.06491113, y: -0.065018415}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.32, y: 0.32}
+    oldSize: {x: 5.02, y: 11.23}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.28572905, y: 0.28193417}
+  m_Size: {x: 4.1368117, y: 10.944618}
   m_EdgeRadius: 0
 --- !u!212 &738372423
 SpriteRenderer:
@@ -2760,9 +2813,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
-  m_Sprite: {fileID: 21300000, guid: 5d52b20f865aff242bfcb08c3b6f61a5, type: 3}
-  m_Color: {r: 1, g: 0.9076453, b: 0.19339621, a: 1}
+  m_SortingOrder: -2
+  m_Sprite: {fileID: 21300000, guid: cf61a1b3d2248a54e9dd7327a63ecbed, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2780,8 +2833,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 738372420}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.73, z: 0}
-  m_LocalScale: {x: 7, y: 7, z: 7}
+  m_LocalPosition: {x: -0.02, y: 2, z: 0}
+  m_LocalScale: {x: 0.23, y: 0.23, z: 0.23}
   m_Children:
   - {fileID: 1051943984}
   m_Father: {fileID: 0}
@@ -2808,6 +2861,37 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!95 &738372426
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 738372420}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e3bb3eef0db014f41af9886bd77c8249, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &738372427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 738372420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aea31fe197afffe409d916f20e512b9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &753196117
 GameObject:
   m_ObjectHideFlags: 0
@@ -2850,6 +2934,10 @@ PrefabInstance:
     - target: {fileID: 6162314212979618617, guid: 78087e5119c69f543b4249a3425e32c6, type: 3}
       propertyPath: m_Name
       value: Slot (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6162314212979618617, guid: 78087e5119c69f543b4249a3425e32c6, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6162314212979618618, guid: 78087e5119c69f543b4249a3425e32c6, type: 3}
       propertyPath: m_Pivot.x
@@ -2953,7 +3041,7 @@ GameObject:
   - component: {fileID: 757898665}
   - component: {fileID: 757898667}
   - component: {fileID: 757898666}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3028,7 +3116,7 @@ GameObject:
   - component: {fileID: 758793308}
   - component: {fileID: 758793310}
   - component: {fileID: 758793309}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: ItemImg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3103,7 +3191,7 @@ GameObject:
   - component: {fileID: 771679057}
   - component: {fileID: 771679059}
   - component: {fileID: 771679058}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: ItemImg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3223,7 +3311,7 @@ GameObject:
   - component: {fileID: 848257022}
   - component: {fileID: 848257024}
   - component: {fileID: 848257023}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: ItemImg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3297,6 +3385,10 @@ PrefabInstance:
     - target: {fileID: 6162314212979618617, guid: 78087e5119c69f543b4249a3425e32c6, type: 3}
       propertyPath: m_Name
       value: Slot (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6162314212979618617, guid: 78087e5119c69f543b4249a3425e32c6, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6162314212979618618, guid: 78087e5119c69f543b4249a3425e32c6, type: 3}
       propertyPath: m_Pivot.x
@@ -3486,7 +3578,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: 7482667652216324306, guid: db750325989564987a34393247d883b4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3508,6 +3600,10 @@ PrefabInstance:
     - target: {fileID: 6162314212979618617, guid: 78087e5119c69f543b4249a3425e32c6, type: 3}
       propertyPath: m_Name
       value: Slot (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6162314212979618617, guid: 78087e5119c69f543b4249a3425e32c6, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6162314212979618618, guid: 78087e5119c69f543b4249a3425e32c6, type: 3}
       propertyPath: m_Pivot.x
@@ -3610,6 +3706,10 @@ PrefabInstance:
     - target: {fileID: 6162314212979618617, guid: 78087e5119c69f543b4249a3425e32c6, type: 3}
       propertyPath: m_Name
       value: Slot (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6162314212979618617, guid: 78087e5119c69f543b4249a3425e32c6, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6162314212979618618, guid: 78087e5119c69f543b4249a3425e32c6, type: 3}
       propertyPath: m_Pivot.x
@@ -3847,9 +3947,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.728136}
   serializedVersion: 2
-  m_Radius: 0.68891364
+  m_Radius: 4.762304
 --- !u!114 &1051943986
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3960,7 +4060,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: 7482667652216324306, guid: db750325989564987a34393247d883b4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3983,7 +4083,7 @@ GameObject:
   - component: {fileID: 1140227052}
   - component: {fileID: 1140227054}
   - component: {fileID: 1140227053}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: HPBG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4057,6 +4157,10 @@ PrefabInstance:
     - target: {fileID: 6162314212979618617, guid: 78087e5119c69f543b4249a3425e32c6, type: 3}
       propertyPath: m_Name
       value: Slot (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6162314212979618617, guid: 78087e5119c69f543b4249a3425e32c6, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6162314212979618618, guid: 78087e5119c69f543b4249a3425e32c6, type: 3}
       propertyPath: m_Pivot.x
@@ -4161,7 +4265,7 @@ GameObject:
   - component: {fileID: 1154522002}
   - component: {fileID: 1154522001}
   - component: {fileID: 1154522000}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Restart_Btn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4292,6 +4396,10 @@ PrefabInstance:
     - target: {fileID: 6162314212979618617, guid: 78087e5119c69f543b4249a3425e32c6, type: 3}
       propertyPath: m_Name
       value: Slot (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6162314212979618617, guid: 78087e5119c69f543b4249a3425e32c6, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6162314212979618618, guid: 78087e5119c69f543b4249a3425e32c6, type: 3}
       propertyPath: m_Pivot.x
@@ -4481,7 +4589,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: 7482667652216324306, guid: db750325989564987a34393247d883b4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4504,7 +4612,7 @@ GameObject:
   - component: {fileID: 1236820214}
   - component: {fileID: 1236820216}
   - component: {fileID: 1236820215}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4583,7 +4691,7 @@ GameObject:
   - component: {fileID: 1256455256}
   - component: {fileID: 1256455258}
   - component: {fileID: 1256455257}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: ItemImg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4772,7 +4880,7 @@ GameObject:
   - component: {fileID: 1348782103}
   - component: {fileID: 1348782105}
   - component: {fileID: 1348782104}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: ItemImg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4846,7 +4954,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1366370080}
   - component: {fileID: 1366370081}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Inventory
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4982,7 +5090,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: 7482667652216324306, guid: db750325989564987a34393247d883b4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -5005,7 +5113,7 @@ GameObject:
   - component: {fileID: 1393132831}
   - component: {fileID: 1393132833}
   - component: {fileID: 1393132832}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: InvenBase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5080,6 +5188,10 @@ PrefabInstance:
     - target: {fileID: 6162314212979618617, guid: 78087e5119c69f543b4249a3425e32c6, type: 3}
       propertyPath: m_Name
       value: Slot (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6162314212979618617, guid: 78087e5119c69f543b4249a3425e32c6, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6162314212979618618, guid: 78087e5119c69f543b4249a3425e32c6, type: 3}
       propertyPath: m_Pivot.x
@@ -5365,6 +5477,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Slot (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 6162314212979618617, guid: 78087e5119c69f543b4249a3425e32c6, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6162314212979618618, guid: 78087e5119c69f543b4249a3425e32c6, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -5511,7 +5627,7 @@ GameObject:
   - component: {fileID: 1702053758}
   - component: {fileID: 1702053760}
   - component: {fileID: 1702053759}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Menu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5588,7 +5704,7 @@ GameObject:
   - component: {fileID: 1790665637}
   - component: {fileID: 1790665639}
   - component: {fileID: 1790665638}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: ItemImg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5749,7 +5865,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: 7482667652216324306, guid: db750325989564987a34393247d883b4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -5863,7 +5979,7 @@ GameObject:
   - component: {fileID: 1886415035}
   - component: {fileID: 1886415037}
   - component: {fileID: 1886415036}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: ItemImg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5938,6 +6054,7 @@ GameObject:
   - component: {fileID: 2083121699}
   - component: {fileID: 2083121701}
   - component: {fileID: 2083121700}
+  - component: {fileID: 2083121702}
   m_Layer: 0
   m_Name: Square
   m_TagString: Floor
@@ -5969,8 +6086,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
+  m_IsTrigger: 0
+  m_UsedByEffector: 1
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
@@ -6024,7 +6141,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: 7482667652216324306, guid: db750325989564987a34393247d883b4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -6036,6 +6153,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!251 &2083121702
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2083121698}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RotationalOffset: 0
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &2100969697
 GameObject:
   m_ObjectHideFlags: 0
@@ -6047,7 +6183,7 @@ GameObject:
   - component: {fileID: 2100969698}
   - component: {fileID: 2100969700}
   - component: {fileID: 2100969699}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: ItemImg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6121,6 +6257,10 @@ PrefabInstance:
     - target: {fileID: 6162314212979618617, guid: 78087e5119c69f543b4249a3425e32c6, type: 3}
       propertyPath: m_Name
       value: Slot (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6162314212979618617, guid: 78087e5119c69f543b4249a3425e32c6, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6162314212979618618, guid: 78087e5119c69f543b4249a3425e32c6, type: 3}
       propertyPath: m_Pivot.x
@@ -6224,6 +6364,7 @@ GameObject:
   - component: {fileID: 2138629744}
   - component: {fileID: 2138629743}
   - component: {fileID: 2138629742}
+  - component: {fileID: 2138629745}
   m_Layer: 9
   m_Name: Ladder
   m_TagString: Ladder
@@ -6244,7 +6385,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.006551191}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -6255,7 +6396,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1, y: 0.8296701}
   m_EdgeRadius: 0
 --- !u!212 &2138629743
 SpriteRenderer:
@@ -6316,12 +6457,25 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2138629741}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -8.9, y: 10.3622, z: 0}
-  m_LocalScale: {x: 19.26443, y: 3.8728259, z: 1}
+  m_LocalPosition: {x: -3.3924, y: 10.642, z: 0}
+  m_LocalScale: {x: 19.829243, y: 1.96817, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!114 &2138629745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2138629741}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 301be77e9a0bfa94a830656611ab12d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  platformCollider: {fileID: 2083121700}
 --- !u!1001 &6162314213952931792
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6332,6 +6486,10 @@ PrefabInstance:
     - target: {fileID: 6162314212979618617, guid: 78087e5119c69f543b4249a3425e32c6, type: 3}
       propertyPath: m_Name
       value: Slot
+      objectReference: {fileID: 0}
+    - target: {fileID: 6162314212979618617, guid: 78087e5119c69f543b4249a3425e32c6, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6162314212979618618, guid: 78087e5119c69f543b4249a3425e32c6, type: 3}
       propertyPath: m_Pivot.x

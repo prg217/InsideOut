@@ -15,12 +15,27 @@ public class Player : MonoBehaviour
     [SerializeField]
     private GameObject monsterPos = null;
 
-    public static bool move = true;
+    public static bool isWalk = true;
+
+    bool isLadder;
+    bool doLadder;
+
+    public Animator animator;
+    float ladderSpeed = 0.0f;
+    float hideSpeed = 2f;
+
+    Vector3 pos;
 
     //public int HP = 20;
 
     void Start()
     {
+        //Vector3 pos;
+        // pos = this.gameObject.transform.position;
+        animator = GetComponent<Animator>();
+
+        isWalk = true;
+
         InvokeRepeating("RandomMonster", 10, 3); //10초후 부터, _Random함수를 3초마다 반복해서 실행 시킵니다.
         myrigidbody = GetComponent<Rigidbody2D>();
     }
@@ -28,7 +43,7 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (move == true)
+        if (isWalk == true)
         {
             PlayerMove();
         }
@@ -40,53 +55,132 @@ public class Player : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if(isLadder)
+        if (isLadder)
         {
             float ver = Input.GetAxis("Vertical");
             myrigidbody.gravityScale = 0;
             myrigidbody.velocity = new Vector2(myrigidbody.velocity.x, ver * moveSpeed);
+
+            doLadder = true;
+
+            if (doLadder == true)
+            {
+
+                if (ver > 0)
+                {
+                    animator.SetBool("doLadder", true);
+                    animator.SetBool("Ladder_Idle", false);
+                }
+                else if (ver == 0)
+                {
+                    animator.SetBool("doLadder", false);
+                    animator.SetBool("Ladder_Idle", true);
+
+                }
+                else
+                {
+                    animator.SetBool("doLadder", true);
+                    animator.SetBool("Ladder_Idle", false);
+                }
+            }
+
         }
 
         else
         {
             myrigidbody.gravityScale = 5f;
         }
-
     }
 
     private void PlayerMove()
     {
         float h = Input.GetAxis("Horizontal");
         float playerSpeed = h * moveSpeed * Time.deltaTime;
+        float hS = h * hideSpeed * Time.deltaTime;
         Vector3 vector3 = new Vector3();
-        vector3.x = playerSpeed;
-        transform.Translate(vector3);
+        //vector3.x = playerSpeed;
+        // transform.Translate(vector3);
 
         if (h < 0)
         {
-            //GetComponent<Animator>().SetBool("Walk", true);
-            transform.localScale = new Vector3(-7, 7, 7);
+
+            if (Shelter.isHide == true)
+            {
+                transform.localScale = new Vector3(0.23f, 0.23f, 0.23f);
+                animator.SetBool("isHide", true);
+                animator.SetBool("isWalk", false);
+
+                vector3.x = hS;
+                transform.Translate(vector3);
+            }
+
+            else
+            {
+                transform.localScale = new Vector3(-0.23f, 0.23f, 0.23f);
+                animator.SetBool("isWalk", true);
+                animator.SetBool("isHide", false);
+
+                vector3.x = playerSpeed;
+                transform.Translate(vector3);
+
+            }
         }
+
         else if (h == 0)
         {
-            //GetComponent<Animator>().SetBool("Walk", false);
+            if (Shelter.isHide == true)
+            {
+                animator.SetBool("isHide", true);
+                animator.SetBool("isWalk", false);
+
+                vector3.x = hS;
+                transform.Translate(vector3);
+            }
+
+            else
+            {
+                animator.SetBool("Idle", true);
+                animator.SetBool("isHide", false);
+                animator.SetBool("isWalk", false);
+
+                vector3.x = playerSpeed;
+                transform.Translate(vector3);
+            }
         }
+
         else
         {
-            //GetComponent<Animator>().SetBool("Walk", true);
-            transform.localScale = new Vector3(7, 7, 7);
+
+            if (Shelter.isHide == true)
+            {
+                transform.localScale = new Vector3(-0.23f, 0.23f, 0.23f);
+                animator.SetBool("isHide", true);
+                animator.SetBool("isWalk", false);
+
+                vector3.x = hS;
+                transform.Translate(vector3);
+            }
+
+            else
+            {
+                transform.localScale = new Vector3(0.23f, 0.23f, 0.23f);
+
+                animator.SetBool("isWalk", true);
+                animator.SetBool("isHide", false);
+
+                vector3.x = playerSpeed;
+                transform.Translate(vector3);
+            }
         }
     }
 
     //사다리(?)이동
-    public bool isLadder;
-
-    private void OnTriggerEnter2D(Collider2D collision)
+  private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.CompareTag("Ladder"))//사다리 인식하기 ladder라는 태그를 만나면?
+        if (collision.CompareTag("Ladder"))//사다리 인식하기 ladder라는 태그를 만나면?
         {
             isLadder = true;
-            
+
             //사다리가 true면 위아래로 움직이게 한다
             //Debug.Log("사다리 만남");
         }
@@ -97,9 +191,9 @@ public class Player : MonoBehaviour
         {
             isLadder = false;
         }
-    }
-     
 
+
+    }
 
     private void RandomMonster()
     {
