@@ -9,6 +9,7 @@ TagManager:
   - Wall
   - Ladder
   - Shelter
+  - Clue
   layers:
   - Default
   - TransparentFX
@@ -20,7 +21,7 @@ TagManager:
   - Monster
   - Shelter
   - Ladder
-  - 
+  - Clue
   - 
   - 
   - 
