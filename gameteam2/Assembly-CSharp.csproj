@@ -57,7 +57,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Script\Player.cs" />
+<<<<<<< Updated upstream
     <Compile Include="Assets\Script\Clue.cs" />
+=======
+    <Compile Include="Assets\Script\Ladder.cs" />
+>>>>>>> Stashed changes
     <Compile Include="Assets\Script\P_Scan.cs" />
     <Compile Include="Assets\Script\HP.cs" />
     <Compile Include="Assets\Script\M_Spawn.cs" />
