@@ -1,5 +1,16 @@
 # Changelog
 
+## [5.1.2] - 2021-04-12
+### Fixed
+- 1321973 When SpriteShapeController has "Update Collider" set to true, it will dirty the scene every time it
+- 1320361 Disabling Edit Spline on Sprite Shape Controller while Cache Geometry is enabled throws an ArgumentException error
+
+## [5.1.1] - 2020-11-25
+### Fixed
+- 1293736 Fixed InvalidOperationException thrown continuously on adding SpriteShapeController component to a GameObject with SpriteRenderer.
+- 1293737 Fixed ArgumentException when tangents and cache geometry are enabled on SpriteShapeController component.
+- 1291842 Fixed error when adding AngleRange to SpriteShapeProfile Preset that was reset before.
+
 ## [5.1.0] - 2020-09-24
 ### Added
 - Added C# Job Tessellation support for Fill Area of SpriteShape.

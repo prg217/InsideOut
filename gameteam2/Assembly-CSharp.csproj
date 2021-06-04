@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{AC3A9F5C-4E66-A77E-2701-BB0A1F519CDB}</ProjectGuid>
+    <ProjectGuid>{EBBF6227-88FC-6310-A31E-6248C78391B2}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -58,6 +58,7 @@
   <ItemGroup>
     <Compile Include="Assets\Script\Player.cs" />
     <Compile Include="Assets\Script\Clue.cs" />
+    <Compile Include="Assets\Script\Ladder.cs" />
     <Compile Include="Assets\Script\P_Scan.cs" />
     <Compile Include="Assets\Script\HP.cs" />
     <Compile Include="Assets\Script\M_Spawn.cs" />
@@ -70,7 +71,6 @@
     <Compile Include="Assets\Script\Title_Menu.cs" />
     <Compile Include="Assets\Script\Inventory.cs" />
     <Compile Include="Assets\Script\Shelter.cs" />
-    <Compile Include="Assets\Script\Ladder.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Ludiq\Ludiq.Core\DotNetDocumentation\System.Web.Extensions.Design.xml" />
