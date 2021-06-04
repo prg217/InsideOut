@@ -4,11 +4,15 @@ using UnityEngine;
 
 public class Slot : MonoBehaviour
 {
-    public static GameObject[] clue = null;
-    public int arraySize = 15;
-
+    // Start is called before the first frame update
     void Start()
     {
-        clue = new GameObject[arraySize];
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
     }
 }

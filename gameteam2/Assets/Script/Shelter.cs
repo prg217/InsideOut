@@ -22,7 +22,7 @@ public class Shelter : MonoBehaviour
             {
                 GameObject.Find("Player").layer = 6; //Hide
                 // Player.move = false;
-                
+
                 isHide = true;
 
             }
