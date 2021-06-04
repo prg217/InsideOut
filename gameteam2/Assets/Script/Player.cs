@@ -191,6 +191,8 @@ public class Player : MonoBehaviour
         {
             isLadder = false;
         }
+
+
     }
 
     private void RandomMonster()
