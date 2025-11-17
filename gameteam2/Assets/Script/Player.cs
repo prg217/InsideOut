@@ -9,35 +9,41 @@ public class Player : MonoBehaviour
     [SerializeField]
     private float moveSpeed = 5f;
     [SerializeField]
-    private float random = 0;
-    [SerializeField]
-    private GameObject monsterObj = null;
-    [SerializeField]
-    private GameObject monsterPos = null;
+    private GameObject Ball = null; //샤이닝볼 추가
 
     public static bool isWalk = true;
+    static public bool isLock = true;
+    static public int Id;
 
     bool isLadder;
-    bool doLadder;
+    static public bool change = false;
 
-    public Animator animator;
-    float ladderSpeed = 0.0f;
+    Animator animator;
+    //float ladderSpeed = 0f;
     float hideSpeed = 2f;
 
     Vector3 pos;
+
+    public static bool doLadder = false;
+    public static bool move = false;
+
+    private AudioSource audioSource_door_L;
+    private AudioSource audioSource;
 
     //public int HP = 20;
 
     void Start()
     {
-        //Vector3 pos;
-        // pos = this.gameObject.transform.position;
         animator = GetComponent<Animator>();
-
-        isWalk = true;
-
-        InvokeRepeating("RandomMonster", 10, 3); //10초후 부터, _Random함수를 3초마다 반복해서 실행 시킵니다.
         myrigidbody = GetComponent<Rigidbody2D>();
+
+        isLock = true;
+        isWalk = true;
+        Id = 0;
+
+        audioSource_door_L = GetComponent<AudioSource>();//문잠긴거
+        audioSource = GetComponent<AudioSource>();//오브젝트
+
     }
 
     // Update is called once per frame
@@ -47,15 +53,26 @@ public class Player : MonoBehaviour
         {
             PlayerMove();
         }
+        else if (isWalk == false)
+        {
+            animator.SetBool("isWalk", false);
+        }
 
+        if (GameManager.clueCount >= 17) //샤이닝볼 단서 모으면 뿅!
+        {
+            Ball.SetActive(true);
+        }
+
+      
         //만약 단서가 0개면 여긴 단서가 없어...라고 말함
         //숨을때 레이어 바꾸기 프로젝트세팅 -피직스 -레이어 콜리즌 메트릭스들어가면 이 레이어끼리 콜라이더를 할거냐 안할거냐(이것도 강의에 있던 것 같아) 박스 콜라이더 닳으면 HP닳아
         //몬스터 닿으면 이미지 띄우고 HP 닳아야지 그 후 애니메이션 쓰러짐->일어남... 이건 좀 애매한데 못하겠음 기획자한테 말하기
+
     }
 
     private void FixedUpdate()
     {
-        if (isLadder)
+        if (isLadder == true)
         {
             float ver = Input.GetAxis("Vertical");
             myrigidbody.gravityScale = 0;
@@ -65,11 +82,18 @@ public class Player : MonoBehaviour
 
             if (doLadder == true)
             {
+                if (isWalk == true)
+                {
+                    animator.SetBool("doLadder", false);
+                    animator.SetBool("Ladder_Idle", true);
+                    animator.SetBool("isWalk", false);
+                }
 
                 if (ver > 0)
                 {
                     animator.SetBool("doLadder", true);
                     animator.SetBool("Ladder_Idle", false);
+
                 }
                 else if (ver == 0)
                 {
@@ -77,10 +101,13 @@ public class Player : MonoBehaviour
                     animator.SetBool("Ladder_Idle", true);
 
                 }
+
+
                 else
                 {
                     animator.SetBool("doLadder", true);
                     animator.SetBool("Ladder_Idle", false);
+
                 }
             }
 
@@ -114,6 +141,7 @@ public class Player : MonoBehaviour
                 transform.Translate(vector3);
             }
 
+
             else
             {
                 transform.localScale = new Vector3(-0.23f, 0.23f, 0.23f);
@@ -123,6 +151,7 @@ public class Player : MonoBehaviour
                 vector3.x = playerSpeed;
                 transform.Translate(vector3);
 
+                move = true;
             }
         }
 
@@ -145,6 +174,8 @@ public class Player : MonoBehaviour
 
                 vector3.x = playerSpeed;
                 transform.Translate(vector3);
+
+                move = false;
             }
         }
 
@@ -170,12 +201,14 @@ public class Player : MonoBehaviour
 
                 vector3.x = playerSpeed;
                 transform.Translate(vector3);
+
+                move = true;
             }
         }
     }
 
     //사다리(?)이동
-  private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Ladder"))//사다리 인식하기 ladder라는 태그를 만나면?
         {
@@ -184,27 +217,78 @@ public class Player : MonoBehaviour
             //사다리가 true면 위아래로 움직이게 한다
             //Debug.Log("사다리 만남");
         }
+
+        if (collision.CompareTag("Pt_Key"))
+        {
+            isLock = false;
+            Id = 1;
+
+            AudioClip audioClip = Resources.Load<AudioClip>("321087__benjaminnelan__door-locked") as AudioClip;
+            GetComponent<AudioSource>().clip = audioClip;
+            audioSource_door_L.Play();
+        }
+
+        if (collision.CompareTag("St_Key"))
+        {
+            isLock = false;
+            Id = 2;
+
+            AudioClip audioClip = Resources.Load<AudioClip>("321087__benjaminnelan__door-locked") as AudioClip;
+            GetComponent<AudioSource>().clip = audioClip;
+            audioSource_door_L.Play();
+        }
+
+        if (collision.CompareTag("Md_Key"))
+        {
+            isLock = false;
+            Id = 3;
+
+            AudioClip audioClip = Resources.Load<AudioClip>("321087__benjaminnelan__door-locked") as AudioClip;
+            GetComponent<AudioSource>().clip = audioClip;
+            audioSource_door_L.Play();
+        }
+
+        if (collision.CompareTag("Sg_Key"))
+        {
+            isLock = false;
+            Id = 4;
+
+            AudioClip audioClip = Resources.Load<AudioClip>("321087__benjaminnelan__door-locked") as AudioClip;
+            GetComponent<AudioSource>().clip = audioClip;
+            audioSource_door_L.Play();
+        }
+
+        if (collision.CompareTag("S_C"))
+        {
+            change = true;
+
+            AudioClip audioClip = Resources.Load<AudioClip>("346695__deleted-user-2104797__body-fall-01") as AudioClip;
+            GetComponent<AudioSource>().clip = audioClip;
+            audioSource.Play();
+        }
     }
+
     private void OnTriggerExit2D(Collider2D collision)//사다리 빠져나오면?
     {
         if (collision.CompareTag("Ladder"))//ladder라는 태그를 만나면?
         {
             isLadder = false;
+            isWalk = true;
         }
-    }
 
-    private void RandomMonster()
-    {
-        if (GameManager.instance.IsMonster == false) //몬스터
+        if (collision.CompareTag("Lock"))
         {
-            random = Random.Range(0, 1000);
-
-            if (random > 900)
-            {
-                GameManager.instance.IsMonster = true;
-                GameObject monster = (GameObject)Instantiate(monsterObj, monsterPos.transform.position, Quaternion.identity);
-            }
+            isLock = true;
+            
         }
+
+        if (collision.CompareTag("S_C"))
+        {
+            change = false;
+        }
+
     }
+
+
 
 }

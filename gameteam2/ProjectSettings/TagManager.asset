@@ -9,7 +9,13 @@ TagManager:
   - Wall
   - Ladder
   - Shelter
-  - Rock
+  - Clue
+  - Pt_Key
+  - Sg_Key
+  - St_Key
+  - Md_Key
+  - Lock
+  - S_C
   layers:
   - Default
   - TransparentFX
@@ -21,18 +27,18 @@ TagManager:
   - Monster
   - Shelter
   - Ladder
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Lock
+  - Pt
+  - St
+  - Md
+  - Sg
+  - Hide1
+  - Hide2
+  - Hide3
+  - 1
+  - 2
+  - 3
+  - 4
   - 
   - 
   - 

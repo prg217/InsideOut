@@ -6,8 +6,8 @@ using UnityEngine.UI;
 public class HP : MonoBehaviour
 {
     Image HPBar;
-    float MaxHP = 20f;
-    public static float hp;
+    public static float MaxHP = 20f;
+    public static float hp; //실시간 반영되는 플레이어의 체력
 
     // Start is called before the first frame update
     void Start()
@@ -20,5 +20,6 @@ public class HP : MonoBehaviour
     void Update()
     {
         HPBar.fillAmount = hp / MaxHP;
+        
     }
 }
